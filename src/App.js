@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import ColorPick from './components/RandomColor';
+import HomePage from './components/HomePage';
+import NavBar from './components/NavBar';
+import Click from './components/Click';
+import Facts from './components/Facts';
+import PhotoSearch from './components/PhotoSearch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar />
+        <HomePage />
+        <Routes>
+          <Route path="/click" element={<Click />} />
+          <Route path="/photosearch" element={<PhotoSearch />} />
+          <Route path="/facts" element={<Facts />} />
+          <Route path="/hues" element={<ColorPick />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
