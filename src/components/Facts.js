@@ -36,8 +36,9 @@ function Facts() {
   return (
     <>
       <div className="facts">
+        <h5>GET YA FACTS HERE</h5>
         <div className="container">
-          <h5>{fact}</h5>
+          <h6>{fact}</h6>
         </div>
         <div className="button-facts">
           <button

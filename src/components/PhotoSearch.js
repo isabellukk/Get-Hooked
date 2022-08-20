@@ -29,20 +29,21 @@ function PhotoSearch() {
     }
   };
   return (
-    <div className="card">
-      <div className="container">
-        <div className="row">
+    <div className="photo-container">
+      <div className="">
+        <div className="photo-input">
           <h5>Search for a photo</h5>
+          <div>
+            <input
+              onChange={handleChange}
+              onKeyDown={keySubmit}
+              type="text"
+              placeholder="Type text here"
+            />
+            <button onClick={handleSubmit}>Search</button>
+          </div>
         </div>
-        <div>
-          <input
-            onChange={handleChange}
-            onKeyDown={keySubmit}
-            type="text"
-            placeholder="Type text here"
-          />
-          <button onClick={handleSubmit}>Search</button>
-        </div>
+
         <div className="unsplash-results">
           {result.map((info, index) => {
             return (

@@ -41,11 +41,38 @@ body {
   justify-content: flex-end;
 }
 button {
-  width: 50%;
   border-radius: 5px;
   background: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 4%;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  padding: 6px;
 
+}
+.button-up {
+  padding: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.facts h5 {
+  letter-spacing: 2px;
+}
+.facts h6 {
+  letter-spacing: 1px;
+  margin: 0px 53px 0px 53px;
+}
+
+
+.facts {
+  width: 100%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding-top: 7%;
+  background-color: rgba(230,165,103,0.3);
+  border-radius: 25px;
+  box-shadow: 8px 10px 20px 1px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -64,7 +91,7 @@ button {
 }
 .click h4 {
   letter-spacing: 4px;
-  color: white;
+  color: gray;
   text-transform: capitalize;
 }
 .click-card {
@@ -87,13 +114,39 @@ button {
   padding: 20%;
   padding-top: 10%;
   display: flex;
-  background-color: rgba(143,164,117,0.7);
+  background-color: rgba(143,164,117,0.3);
   border-radius: 25px;
   justify-content: center;
   min-width: 100%;
   box-shadow: 8px 10px 20px 1px rgba(0, 0, 0, 0.2);
 
 
+}
+.photo-input {
+  background-color: rgba(143,164,117,0.3);
+  border-radius: 25px;
+  padding: 2%;
+  padding-bottom: 6%;
+}
+
+
+.photo-search{
+  margin-bottom: 10%;
+}
+.photo-container {
+  width: 100%;
+  margin-left: 25%;
+  margin-top: 10%;
+
+}
+.photo-input h5{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+}
+.photo-input input {
+  letter-spacing: 1px;
+  padding: 3px 10px 3px 10px;
 }
 .card-container {
   padding: 30%;
@@ -112,7 +165,7 @@ button {
   padding: 25%;
   margin-left: 10%;
   width: 90%;
-  height: 40%;
+  height: 30%;
   display: flex;
   justify-content: center;
   box-shadow: 8px 10px 20px 1px rgba(0, 0, 0, 0.2);

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
+
 function Click() {
   const [count, setCount] = useState(0);
 
@@ -8,15 +10,19 @@ function Click() {
         <div className="card">
           <div className="click-card">
             <h4>How high can you go?</h4>
-            <div className="button">
-              <button onClick={() => setCount(count + 1)}>Click me</button>
+            <div className="">
+              <button onClick={() => setCount(count + 1)}>
+                <div className="button-up">
+                  <FaArrowUp />
+                </div>
+              </button>
             </div>
           </div>
         </div>
 
         <div className="card-count">
           <div className="card-container">
-            <h1>{count}</h1>
+            <h4>{count}</h4>
           </div>
         </div>
       </div>
